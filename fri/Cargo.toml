@@ -1,0 +1,40 @@
+[package]
+name = "winter-fri"
+version = "0.6.4"
+description = "Implementation of FRI protocol for the Winterfell STARK prover/verifier"
+authors = ["winterfell contributors"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/novifinancial/winterfell"
+documentation = "https://docs.rs/winter-fri/0.6.4"
+categories = ["cryptography", "no-std"]
+keywords = ["crypto", "polynomial", "commitments"]
+edition = "2021"
+rust-version = "1.67"
+
+[lib]
+bench = false
+
+[[bench]]
+name = "prover"
+harness = false
+
+[[bench]]
+name = "folding"
+harness = false
+
+[features]
+concurrent = ["crypto/concurrent", "math/concurrent", "utils/concurrent", "std"]
+default = ["std"]
+std = ["crypto/std", "math/std", "utils/std"]
+
+[dependencies]
+crypto = { version = "0.6", path = "../crypto", package = "winter-crypto", default-features = false }
+math = { version = "0.6", path = "../math", package = "winter-math", default-features = false }
+utils = { version = "0.6", path = "../utils/core", package = "winter-utils", default-features = false }
+ark-std = { version = "0.4", default-features = false, features = [ "print-trace", "std" ]}
+human_bytes = { version = "0.4", default-features = false }
+
+[dev-dependencies]
+criterion = "0.5"
+rand-utils = { version = "0.6", path = "../utils/rand", package = "winter-rand-utils" }

@@ -1,0 +1,18 @@
+[package]
+name = "mpcith"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+math={version = "0.6", path = "../math", package = "winter-math", default-features = false}
+rand-utils = { version = "0.6", path = "../utils/rand", package = "winter-rand-utils", default-features = false }
+core-utils = { version = "0.6", path = "../utils/core", package = "winter-utils", default-features = false }
+crypto={version = "0.6", path = "../crypto", package = "winter-crypto", default-features = false}
+fri={version = "0.6", path = "../fri", package = "winter-fri", default-features = false}
+poly-args={version = "0.1", path = "../poly-args", package = "poly-args", default-features = false}
+fiat-shamir={version = "0.1", path = "../fiat-shamir", package = "fiat-shamir", default-features = false}
+secret-sharing={version = "0.1", path = "../secret-sharing", package = "secret-sharing", default-features = false}
+
+rand="0.8"
+human_bytes = { version = "0.4", default-features = false }
+ark-std = { version = "0.4", default-features = false, features = [ "print-trace", "std" ]}

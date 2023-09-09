@@ -1,0 +1,9 @@
+[package]
+name = "fiat-shamir"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crypto = { version = "0.6", path = "../crypto", package = "winter-crypto", default-features = false }
+math = { version = "0.6", path = "../math", package = "winter-math", default-features = false }
+utils = { version = "0.6", path = "../utils/core", package = "winter-utils", default-features = false }

@@ -1,0 +1,21 @@
+[workspace]
+members = [
+  "utils/core",
+  "utils/rand",
+  "math",
+  "crypto",
+  "fri",
+  "secret-sharing",
+  "poly-args",
+  "fiat-shamir",
+  "mpcith",
+  "naive-training",
+]
+
+[profile.release]
+codegen-units = 1
+lto = true
+
+[profile.bench]
+codegen-units = 1
+lto = true
