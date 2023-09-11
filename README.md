@@ -1,6 +1,6 @@
-# zkpot 🪴: Experimenting with Zero-Knowledge Proofs of Training [ePrint:2023/](https://eprint.iacr.org/2023/)
+# zkpot 🪴: Experimenting with Zero-Knowledge Proofs of Training [ePrint:2023/1345](https://eprint.iacr.org/2023/1345)
 
-Rust implementation of a the Zero-Knowledge Proof of Training for Logistic Regression models introdued in [ePrint:2023/](https://eprint.iacr.org/2023/)/
+Rust implementation of a the Zero-Knowledge Proof of Training for Logistic Regression models introdued in [ePrint:2023/1345](https://eprint.iacr.org/2023/1345)
 
 **WARNING:** This is an academic proof-of-concept prototype, and in particular has not received careful code review. This implementation is NOT ready for production use.
 
