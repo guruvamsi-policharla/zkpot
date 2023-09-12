@@ -6,11 +6,6 @@ Rust implementation of a the Zero-Knowledge Proof of Training for Logistic Regre
 
 Requires Rust nightly.
 
-## Dependencies
-This project uses the [winterfell](https://github.com/facebook/winterfell/) crate as the backend for the STARK prover. We have a [fork](https://github.com/bwesterb/winterfell/) of this crate which contains the zkDilithium fields/extensions.
-
-The [zkDilithium python spec](spec/zkdilithium.py) requires python 3.9 or below due to its dependence on the [Galois](https://github.com/mhostetter/galois) package.
-
 ## Overview
 This project began as a fork of the [winterfell](https://github.com/facebook/winterfell/) crate and has been modified as follows:
 
