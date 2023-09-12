@@ -21,10 +21,11 @@ This project began as a fork of the [winterfell](https://github.com/facebook/win
 * [`poly-args/`](poly-args/): Contains implementations of sum check proofs and its variants.
 * [`secret-sharing/`](secret-sharing/): Contains an implementation of packed secret sharing.
 
-To run, execute individual tests with cargo. To run all use 
+To run, execute individual tests with cargo. To run all use:
 ```
 cargo test --release
 ```
+**WARNING:** This requires a large amount of memory. Reduce the dataset size to reduce memory usage.
 
 ## License
 This library is released under the MIT License.
